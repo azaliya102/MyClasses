@@ -1,8 +1,8 @@
 package org.example;
 
 public class Motorcycle {
-    String brand;
-    int ccSize;
+    private String brand;
+    private int ccSize;
 
     public Motorcycle(String brand, int ccSize) {
         this.brand = brand;

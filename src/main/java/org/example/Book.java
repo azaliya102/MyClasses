@@ -1,8 +1,8 @@
 package org.example;
 
 public class Book {
-    String name;
-    int pageCount;
+    private String name;
+    private int pageCount;
 
     public Book(String name, int pageCount) {
         this.name = name;

@@ -3,10 +3,10 @@ package org.example;
 import java.util.Arrays;
 
 public class Bookshelf {
-    Book[] books;
-    int width;
-    int height;
-    int depth;
+    private Book[] books;
+    private int width;
+    private int height;
+    private int depth;
 
     public Bookshelf(Book[] books, int width, int height, int depth) {
         this.books = books;

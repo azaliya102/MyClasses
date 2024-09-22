@@ -3,7 +3,7 @@ package org.example;
 import java.util.Arrays;
 
 public class Garage {
-    Motorcycle[] motorcycles;
+    private Motorcycle[] motorcycles;
 
     public Garage(Motorcycle[] motorcycles) {
         this.motorcycles = motorcycles;
@@ -21,7 +21,7 @@ public class Garage {
                 new Motorcycle("Honda", 750),
                 new Motorcycle("BMW", 1250)
         };
-        Garage mygarage = new Garage(motos);
-        System.out.println(mygarage);
+        Garage myGarage = new Garage(motos);
+        System.out.println(myGarage);
     }
 }

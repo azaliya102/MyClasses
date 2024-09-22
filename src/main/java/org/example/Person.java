@@ -3,9 +3,9 @@ package org.example;
 import java.util.Arrays;
 
 public class Person {
-    String name;
-    String lastname;
-    House[] houses;
+    private String name;
+    private String lastname;
+    private House[] houses;
 
     public Person(String name, String lastname, House[] houses) {
         this.name = name;

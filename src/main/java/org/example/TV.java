@@ -1,8 +1,8 @@
 package org.example;
 
 public class TV {
-    int size;
-    String name;
+    private int size;
+    private String name;
 
     public TV(int size, String name) {
         this.size = size;

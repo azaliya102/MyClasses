@@ -3,14 +3,14 @@ package org.example;
 import java.util.Arrays;
 
 public class Room {
-    Bookshelf[] shelves;
-    TV[] tvs;
-    Room(Bookshelf[] shelves, TV[] TVs){
+    private Bookshelf[] shelves;
+    private TV[] tvs;
+    public Room(Bookshelf[] shelves, TV[] tvs){
         this.shelves = shelves;
-        this.tvs = TVs;
+        this.tvs = tvs;
     }
-    Room(Bookshelf[] shelves){
-        this.shelves = shelves;
+    public Room(Bookshelf[] shelves){
+        this(shelves, null);
     }
 
     @Override
@@ -31,12 +31,12 @@ public class Room {
         Bookshelf[] bookshelves = {
                 new Bookshelf(books, 40, 50, 30)
         };
-        TV[] TVs = {
+        TV[] tvs = {
                 new TV(45, "Samsung"),
                 new TV(55, "LG")
         };
         Room sleeping = new Room(bookshelves);
-        Room guestroom = new Room(bookshelves, TVs);
+        Room guestroom = new Room(bookshelves, tvs);
         System.out.println(sleeping);
         System.out.println(guestroom);
     }

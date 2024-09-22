@@ -3,8 +3,8 @@ package org.example;
 import java.util.Arrays;
 
 public class House {
-    Room[] rooms;
-    Garage[] garages;
+    private Room[] rooms;
+    private Garage[] garages;
 
     public House(Room[] rooms, Garage[] garages) {
         this.rooms = rooms;
