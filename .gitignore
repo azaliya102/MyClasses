@@ -1,2 +1,5 @@
 .idea
 ClassTest.iml
+build
+.gradle
+
