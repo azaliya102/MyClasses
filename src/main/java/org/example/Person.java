@@ -45,8 +45,8 @@ public class Person {
                 new Room(bookshelves, tvs)
         };
         Motorcycle[] motos = {
-                new Motorcycle("Honda", 750),
-                new Motorcycle("BMW", 1250)
+                new Motorcycle("honda", 750),
+                new Motorcycle("bmw", 1250)
         };
         Garage[] mygarage = {
                 new Garage(motos)
