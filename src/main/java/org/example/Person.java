@@ -55,7 +55,7 @@ public class Person {
                 new House(rooms, mygarage)
         };
 
-        Person me = new Person("Azaliya", "Muratova");
+        Person me = new Person("Azalia", "Muratova");
         Person you = new Person("Pavel", "Orekhov", yourhouse);
 
         System.out.println(me);
