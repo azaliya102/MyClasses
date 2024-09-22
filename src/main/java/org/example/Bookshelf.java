@@ -17,7 +17,7 @@ public class Bookshelf {
 
     @Override
     public String toString() {
-        return "Bookshelf{" +
+        return "Bookshelf{ " +
                 "books   = " + Arrays.toString(books) +
                 ", width = " + width +
                 ", height = " + height +
