@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Room {
     Bookshelf[] shelves;
-    TV[] TVs;
+    TV[] tvs;
     Room(Bookshelf[] shelves, TV[] TVs){
         this.shelves = shelves;
-        this.TVs = TVs;
+        this.tvs = TVs;
     }
     Room(Bookshelf[] shelves){
         this.shelves = shelves;
@@ -17,7 +17,7 @@ public class Room {
     public String toString() {
         return "Room{" +
                 "shelves = " + Arrays.toString(shelves) +
-                ", TVs = " + Arrays.toString(TVs) +
+                ", TVs = " + Arrays.toString(tvs) +
                 '}';
     }
 

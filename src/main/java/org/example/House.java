@@ -6,13 +6,13 @@ public class House {
     Room[] rooms;
     Garage[] garages;
 
-    House(Room[] rooms, Garage[] garages) {
+    public House(Room[] rooms, Garage[] garages) {
         this.rooms = rooms;
         this.garages = garages;
     }
 
-    House(Room[] rooms) {
-        this.rooms = rooms;
+    public House(Room[] rooms) {
+        this(rooms, null);
     }
 
     @Override
@@ -41,8 +41,8 @@ public class House {
                 new Room(bookshelves, tvs)
         };
         Motorcycle[] motos = {
-               new Motorcycle("honda", 750),
-               new Motorcycle("BMW", 1250)
+                new Motorcycle("honda", 750),
+                new Motorcycle("BMW", 1250)
         };
         Garage[] mygarage = {
                 new Garage(motos)

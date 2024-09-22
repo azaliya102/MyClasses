@@ -4,7 +4,7 @@ public class TV {
     int size;
     String name;
 
-    TV(int size, String name) {
+    public TV(int size, String name) {
         this.size = size;
         this.name = name;
     }

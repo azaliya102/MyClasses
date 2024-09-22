@@ -3,7 +3,8 @@ package org.example;
 public class Motorcycle {
     String brand;
     int ccSize;
-    Motorcycle(String brand, int ccSize){
+
+    public Motorcycle(String brand, int ccSize) {
         this.brand = brand;
         this.ccSize = ccSize;
     }

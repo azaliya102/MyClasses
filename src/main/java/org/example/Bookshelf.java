@@ -8,7 +8,7 @@ public class Bookshelf {
     int height;
     int depth;
 
-    Bookshelf(Book[] books, int width, int height, int depth) {
+    public Bookshelf(Book[] books, int width, int height, int depth) {
         this.books = books;
         this.width = width;
         this.height = height;

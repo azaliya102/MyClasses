@@ -7,15 +7,14 @@ public class Person {
     String lastname;
     House[] houses;
 
-    Person(String name, String lastname, House[] houses) {
+    public Person(String name, String lastname, House[] houses) {
         this.name = name;
         this.lastname = lastname;
         this.houses = houses;
     }
 
-    Person(String name, String lastname) {
-        this.name = name;
-        this.lastname = lastname;
+    public Person(String name, String lastname) {
+        this(name, lastname, null);
     }
 
     @Override

@@ -1,11 +1,11 @@
 package org.example;
 
-import java.lang.module.ModuleReader;
 import java.util.Arrays;
 
 public class Garage {
     Motorcycle[] motorcycles;
-    Garage(Motorcycle[] motorcycles){
+
+    public Garage(Motorcycle[] motorcycles) {
         this.motorcycles = motorcycles;
     }
 
