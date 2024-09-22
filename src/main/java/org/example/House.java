@@ -44,12 +44,12 @@ public class House {
                 new Motorcycle("honda", 750),
                 new Motorcycle("BMW", 1250)
         };
-        Garage[] mygarage = {
+        Garage[] myGarage = {
                 new Garage(motos)
         };
-        House myhouse = new House(rooms, mygarage);
-        House yourhouse = new House(rooms);
-        System.out.println(myhouse);
-        System.out.println(yourhouse);
+        House myHouse = new House(rooms, myGarage);
+        House yourHouse = new House(rooms);
+        System.out.println(myHouse);
+        System.out.println(yourHouse);
     }
 }
