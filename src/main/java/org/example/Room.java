@@ -5,12 +5,30 @@ import java.util.Arrays;
 public class Room {
     private Bookshelf[] shelves;
     private TV[] tvs;
-    public Room(Bookshelf[] shelves, TV[] tvs){
+
+    public Room(Bookshelf[] shelves, TV[] tvs) {
         this.shelves = shelves;
         this.tvs = tvs;
     }
-    public Room(Bookshelf[] shelves){
+
+    public Room(Bookshelf[] shelves) {
         this(shelves, null);
+    }
+
+    public Bookshelf[] getShelves() {
+        return shelves;
+    }
+
+    public void setShelves(Bookshelf[] shelves) {
+        this.shelves = shelves;
+    }
+
+    public TV[] getTvs() {
+        return tvs;
+    }
+
+    public void setTvs(TV[] tvs) {
+        this.tvs = tvs;
     }
 
     @Override

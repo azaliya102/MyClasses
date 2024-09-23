@@ -17,6 +17,30 @@ public class Person {
         this(name, lastname, null);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public House[] getHouses() {
+        return houses;
+    }
+
+    public void setHouses(House[] houses) {
+        this.houses = houses;
+    }
+
     @Override
     public String toString() {
         return "Person{" +

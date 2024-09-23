@@ -15,6 +15,25 @@ public class House {
         this(rooms, null);
     }
 
+    public Room[] getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(Room[] rooms) {
+        if (rooms != null) {
+            this.rooms = rooms;
+        }
+    }
+
+    public Garage[] getGarages() {
+        return garages;
+    }
+
+    public void setGarages(Garage[] garages) {
+        if (garages != null) {
+            this.garages = garages;
+        }
+    }
     @Override
     public String toString() {
         return "House{" +

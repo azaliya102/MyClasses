@@ -9,6 +9,22 @@ public class TV {
         this.name = name;
     }
 
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "TV{" +
@@ -24,5 +40,6 @@ public class TV {
         System.out.println(samsung);
         System.out.println(lg);
         System.out.println(xiaomi);
+        System.out.println(xiaomi.getName());
     }
 }

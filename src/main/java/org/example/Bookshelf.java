@@ -14,6 +14,40 @@ public class Bookshelf {
         this.height = height;
         this.depth = depth;
     }
+    public Bookshelf(){
+
+    }
+    public Book[] getBooks() {
+        return books;
+    }
+
+    public void setBooks(Book[] books) {
+        this.books = books;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
+    }
 
     @Override
     public String toString() {
@@ -33,5 +67,9 @@ public class Bookshelf {
         };
         Bookshelf biggest = new Bookshelf(books, 55, 30, 45);
         System.out.println(biggest);
+        Bookshelf newOne = new Bookshelf();
+        newOne.setDepth(100);
+        System.out.println("new depth is " + newOne.getDepth());
+
     }
 }

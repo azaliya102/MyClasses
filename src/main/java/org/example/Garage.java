@@ -9,6 +9,16 @@ public class Garage {
         this.motorcycles = motorcycles;
     }
 
+    public Motorcycle[] getMotorcycles() {
+        return motorcycles;
+    }
+
+    public void setMotorcycles(Motorcycle[] motorcycles) {
+        if (motorcycles != null) { // to avoid accidentally passing null to the array :)
+            this.motorcycles = motorcycles;
+        }
+    }
+
     @Override
     public String toString() {
         return "Garage{" +

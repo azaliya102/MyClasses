@@ -9,6 +9,26 @@ public class Motorcycle {
         this.ccSize = ccSize;
     }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public int getCcSize() {
+        return ccSize;
+    }
+
+    public void setCcSize(int ccSize) {
+        if (ccSize > 0) {
+            this.ccSize = ccSize;
+        } else {
+            System.out.println("Engine size must be positive!!!");
+        }
+    }
+
     @Override
     public String toString() {
         return "Motorcycle{" +
@@ -22,5 +42,6 @@ public class Motorcycle {
         Motorcycle bmw = new Motorcycle("BMW", 1250);
         System.out.println(honda);
         System.out.println(bmw);
+        bmw.setCcSize(-300);
     }
 }
