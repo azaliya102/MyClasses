@@ -1,3 +1,9 @@
-.idea/vcs.xml
-.gradle
-.idea
+.gradle/
+build/
+
+.idea/
+*.iml
+
+*.class
+*.bin
+*.lock
