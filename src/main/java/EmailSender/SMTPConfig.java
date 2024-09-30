@@ -4,11 +4,11 @@ import java.util.Properties;
 
 public class SMTPConfig {
     private String host;
-    private int port;
+    private String port;
     private String username;
     private String password;
 
-    public SMTPConfig(String host, int port, String username, String password) {
+    public SMTPConfig(String host, String port, String username, String password) {
         this.host = host;
         this.port = port;
         this.username = username;
@@ -23,11 +23,11 @@ public class SMTPConfig {
         this.host = host;
     }
 
-    public int getPort() {
+    public String getPort() {
         return port;
     }
 
-    public void setPort(int port) {
+    public void setPort(String port) {
         this.port = port;
     }
 
@@ -53,7 +53,11 @@ public class SMTPConfig {
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.host", host);
-        properties.put("mail.smtp.port", String.valueOf(port)); // because put() expects a String type
+        properties.put("mail.smtp.port", port);
         return properties;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(System.getenv("my_pass"));
     }
 }
